@@ -65,9 +65,12 @@ background:"#020617"
 }}>
 
 <h2 style={{
-textAlign:"center",
-fontSize:"32px",
-marginBottom:"50px"
+  textAlign:"center",
+  fontSize:"32px",
+  marginBottom:"50px",
+  color:"#22d3ee",
+  letterSpacing:"1px",
+  textShadow:"0 0 10px rgba(34,211,238,0.6)"
 }}>
 Top Expertise
 </h2>
