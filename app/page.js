@@ -44,13 +44,9 @@ I enjoy building scalable web apps and IoT systems.
 
 <div style={{marginTop:"25px"}}>
 
-<a href="/projects" style={buttonStyle}>
-View Work
-</a>
+<a href="/projects" style={buttonStyle}>View Work</a>
 
-<a href="/contact" style={buttonStyle}>
-Hire Me
-</a>
+<a href="/contact" style={buttonStyle}>Contact Me</a>
 
 </div>
 
@@ -94,10 +90,19 @@ margin:"auto"
 
 {skills.map((skill)=>(
 <div key={skill.name} style={skillCard}>
-<div style={{fontSize:"30px"}}>{skill.icon}</div>
-<h3>{skill.name}</h3>
+  <div style={{fontSize:"30px"}}>{skill.icon}</div>
+
+  <h3 style={{
+    color:"#22d3ee",
+    marginTop:"10px"
+  }}>
+    {skill.name}
+  </h3>
+
 </div>
 ))}
+
+<Timeline/>
 
 </div>
 
