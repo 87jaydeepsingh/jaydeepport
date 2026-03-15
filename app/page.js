@@ -10,7 +10,7 @@ export default async function Home() {
   const db = client.db("jaydeepport");
 
   const projects = await db
-    .collection("projects")
+    .collection("portfolio")
     .find({})
     .limit(3)
     .toArray();
