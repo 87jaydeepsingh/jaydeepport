@@ -102,9 +102,9 @@ margin:"auto"
 </div>
 ))}
 
-<Timeline/>
-
 </div>
+
+<Timeline/>
 
 </section>
 
