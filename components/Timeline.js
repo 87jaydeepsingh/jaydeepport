@@ -5,19 +5,19 @@ const timeline = [
 {
 year:"2024",
 title:"Started Fullstack Journey",
-desc:"Learning Flask, React and backend development."
+desc:"Learning Python, Flask and frontend development."
 },
 
 {
 year:"2025",
-title:"Building Portfolio Projects",
-desc:"Created multiple web apps using Next.js and MongoDB."
+title:"Building Web Applications",
+desc:"Created multiple projects using React and MongoDB."
 },
 
 {
 year:"Future",
 title:"Fullstack Developer",
-desc:"Working on scalable web apps and cloud systems."
+desc:"Working on scalable cloud and web applications."
 }
 
 ];
@@ -25,47 +25,75 @@ desc:"Working on scalable web apps and cloud systems."
 return(
 
 <section style={{
-padding:"80px",
-background:"#020617"
+padding:"80px"
 }}>
 
 <h2 style={{
 textAlign:"center",
 fontSize:"32px",
-marginBottom:"50px"
+marginBottom:"60px"
 }}>
-Experience
+Experience Timeline
 </h2>
 
 <div style={{
-maxWidth:"800px",
-margin:"auto",
-borderLeft:"3px solid #38bdf8",
-paddingLeft:"30px"
+position:"relative",
+maxWidth:"1000px",
+margin:"auto"
+}}>
+
+{/* horizontal line */}
+
+<div style={{
+position:"absolute",
+top:"20px",
+left:"0",
+right:"0",
+height:"3px",
+background:"#38bdf8"
+}}/>
+
+<div style={{
+display:"flex",
+justifyContent:"space-between"
 }}>
 
 {timeline.map((item,index)=>(
 
 <div key={index} style={{
-marginBottom:"40px",
-position:"relative"
+textAlign:"center",
+width:"30%"
 }}>
 
+{/* dot */}
+
 <div style={{
-position:"absolute",
-left:"-38px",
-top:"5px",
-width:"15px",
-height:"15px",
+width:"18px",
+height:"18px",
 background:"#38bdf8",
-borderRadius:"50%"
+borderRadius:"50%",
+margin:"auto",
+marginBottom:"15px",
+position:"relative",
+zIndex:"2"
 }}/>
 
-<h3>{item.year}</h3>
+{/* card */}
 
-<h4 style={{color:"#38bdf8"}}>
-{item.title}
+<div style={{
+background:"#1e293b",
+padding:"20px",
+borderRadius:"10px",
+border:"1px solid #334155"
+}}>
+
+<h4 style={{color:"#22d3ee"}}>
+{item.year}
 </h4>
+
+<h3>
+{item.title}
+</h3>
 
 <p style={{color:"#94a3b8"}}>
 {item.desc}
@@ -73,7 +101,11 @@ borderRadius:"50%"
 
 </div>
 
+</div>
+
 ))}
+
+</div>
 
 </div>
 
