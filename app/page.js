@@ -17,6 +17,7 @@ export default async function Home() {
 
   return (
 
+
 <div>
 
 {/* HERO SECTION */}
@@ -234,6 +235,19 @@ color:"#64748b"
   );
 }
 
+const iconStyle = {
+width:"40px",
+height:"40px",
+background:"#0f172a",
+borderRadius:"50%",
+display:"flex",
+alignItems:"center",
+justifyContent:"center",
+color:"#22d3ee",
+textDecoration:"none",
+fontWeight:"bold",
+border:"1px solid #334155"
+};
 
 
 const buttonStyle={
