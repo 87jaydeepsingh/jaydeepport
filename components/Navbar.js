@@ -18,6 +18,7 @@ export default function Navbar() {
         color:"#38bdf8",
         fontWeight:"bold"
       }}>
+        Jaydeep Singh
       </h2>
 
       {/* MENU */}
