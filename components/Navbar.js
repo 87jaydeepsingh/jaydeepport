@@ -14,6 +14,12 @@ export default function Navbar() {
 
       {/* LOGO */}
 
+      <h2 style={{
+        color:"#38bdf8",
+        fontWeight:"bold"
+      }}>
+      </h2>
+
       {/* MENU */}
 
       <div style={{
