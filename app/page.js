@@ -20,42 +20,87 @@ export default async function Home() {
 <div>
 
 {/* HERO SECTION */}
-
 <section style={{
-padding:"100px 80px",
 display:"flex",
-justifyContent:"space-between",
 alignItems:"center",
+justifyContent:"space-between",
+padding:"80px 10%",
 flexWrap:"wrap"
 }}>
 
-<div style={{maxWidth:"500px"}}>
+{/* LEFT SIDE */}
 
-<p style={{color:"#ef4444",fontWeight:"bold"}}>HELLO!</p>
+<div style={{maxWidth:"600px"}}>
 
-<h1 style={{fontSize:"55px"}}>
-I Am <span style={{color:"#38bdf8"}}>Jaydeep</span>
+<h1 style={{
+fontSize:"48px",
+fontWeight:"700",
+lineHeight:"1.2"
+}}>
+Hi There,<br/>
+I'm <span style={{color:"#22d3ee"}}>Jaydeep Singh</span>
 </h1>
 
-<p style={{color:"#cbd5f5",lineHeight:"1.6"}}>
-Soon to be a Fullstack developer focused on Flask + React.
-I enjoy building scalable web apps and IoT systems.
+<p style={{
+marginTop:"20px",
+fontSize:"20px",
+color:"#94a3b8"
+}}>
+I Am Into <span style={{color:"#22d3ee"}}>Fullstack Development</span>
 </p>
 
-<div style={{marginTop:"25px"}}>
+{/* BUTTON */}
 
-<a href="/projects" style={buttonStyle}>View Work</a>
+<button style={{
+marginTop:"30px",
+background:"#2563eb",
+color:"white",
+padding:"12px 28px",
+borderRadius:"30px",
+border:"none",
+fontSize:"16px",
+cursor:"pointer",
+boxShadow:"0 6px 20px rgba(0,0,0,0.3)"
+}}>
+About Me
+</button>
 
-<a href="/contact" style={buttonStyle}>Contact Me</a>
+{/* SOCIAL ICONS */}
+
+<div style={{
+display:"flex",
+gap:"15px",
+marginTop:"30px"
+}}>
+
+<a href="#" style={iconStyle}>in</a>
+<a href="#" style={iconStyle}>gh</a>
+<a href="#" style={iconStyle}>tw</a>
+<a href="#" style={iconStyle}>ig</a>
+<a href="#" style={iconStyle}>yt</a>
 
 </div>
 
 </div>
 
-<img src="/profile.png" style={{width:"350px"}}/>
+{/* RIGHT SIDE IMAGE */}
+
+<div>
+
+<img
+src="/profile.png"
+alt="profile"
+style={{
+width:"320px",
+borderRadius:"50%",
+border:"6px solid #22d3ee",
+boxShadow:"0 0 30px rgba(34,211,238,0.5)"
+}}
+/>
+
+</div>
 
 </section>
-
 
 {/* EXPERTISE SECTION */}
 
